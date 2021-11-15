@@ -1,0 +1,1 @@
+{"appName":"rollouts","userGivenName":"rollouts","destNamespace":"captest","destServer":"https://kubernetes.default.svc","srcPath":"apps/rollouts/overlays/captest","srcRepoURL":"https://github.com/codefresh-contrib/captest.git","srcTargetRevision":"","labels":{"codefresh_io_entity":"component"}}
