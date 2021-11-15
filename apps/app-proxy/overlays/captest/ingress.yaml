@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/backend-protocol: http
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+  creationTimestamp: null
+  name: captest-cap-app-proxy
+  namespace: captest
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          service:
+            name: cap-app-proxy
+            port:
+              number: 3017
+        path: /app-proxy(/|$)(.*)
+        pathType: Prefix
+status:
+  loadBalancer: {}
