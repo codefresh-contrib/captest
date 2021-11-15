@@ -1,0 +1,1 @@
+{"appName":"workflow-reporter","userGivenName":"workflow-reporter","destNamespace":"captest","destServer":"https://kubernetes.default.svc","srcPath":"apps/workflow-reporter/captest/resources","srcRepoURL":"https://github.com/codefresh-contrib/captest.git","srcTargetRevision":"","labels":{"codefresh_io_entity":"component"},"exclude":"","include":""}
