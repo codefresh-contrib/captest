@@ -1,0 +1,1 @@
+{"appName":"events","userGivenName":"events","destNamespace":"captest","destServer":"https://kubernetes.default.svc","srcPath":"apps/events/overlays/captest","srcRepoURL":"https://github.com/codefresh-contrib/captest.git","srcTargetRevision":"","labels":{"codefresh_io_entity":"component"}}
