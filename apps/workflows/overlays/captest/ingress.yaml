@@ -4,6 +4,8 @@ metadata:
   creationTimestamp: null
   name: captest-workflows-ingress
   namespace: captest
+  annotations:
+    kubernetes.io/ingress.class: nginx
 spec:
   rules:
   - http:
