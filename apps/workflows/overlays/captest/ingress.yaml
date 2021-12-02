@@ -6,6 +6,8 @@ metadata:
   namespace: captest
   annotations:
     kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/backend-protocol: https
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:
   rules:
   - http:
@@ -15,7 +17,8 @@ spec:
             name: argo-server
             port:
               number: 2746
-        path: /workflows/
+        # path: /workflows/
+        path: /workflows(/|$)(.*)
         pathType: ImplementationSpecific
 status:
   loadBalancer: {}
