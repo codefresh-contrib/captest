@@ -17,7 +17,8 @@ spec:
             name: cap-app-proxy
             port:
               number: 3017
-        path: /app-proxy/
+        # path: /app-proxy/
+        path: /app-proxy(/|$)(.*)
         pathType: ImplementationSpecific
 status:
   loadBalancer: {}
