@@ -14,28 +14,28 @@ data:
       components:
       - name: events
         type: kustomize
-        url: github.com/codefresh-io/cli-v2/manifests/argo-events?ref=v0.0.157
+        url: github.com/codefresh-io/cli-v2/manifests/argo-events?ref=v0.0.166
         wait: true
       - name: rollouts
         type: kustomize
-        url: github.com/codefresh-io/cli-v2/manifests/argo-rollouts?ref=v0.0.157
+        url: github.com/codefresh-io/cli-v2/manifests/argo-rollouts?ref=v0.0.166
         wait: false
       - name: workflows
         type: kustomize
-        url: github.com/codefresh-io/cli-v2/manifests/argo-workflows?ref=v0.0.157
+        url: github.com/codefresh-io/cli-v2/manifests/argo-workflows?ref=v0.0.166
         wait: false
       - name: argocd-agent
         type: kustomize
-        url: github.com/codefresh-io/cli-v2/manifests/argo-agent?ref=v0.0.157
+        url: github.com/codefresh-io/cli-v2/manifests/argo-agent?ref=v0.0.166
         wait: false
       - name: app-proxy
         type: kustomize
-        url: github.com/codefresh-io/cli-v2/manifests/app-proxy?ref=v0.0.157
+        url: github.com/codefresh-io/cli-v2/manifests/app-proxy?ref=v0.0.166
         wait: false
       defVersion: 1.0.0
       ingressHost: ae0c7274421cb48deb1246e561001c35-191698994.us-east-2.elb.amazonaws.com
       repo: https://github.com/codefresh-contrib/captest.git
-      version: 0.0.157
+      version: 0.0.166
 kind: ConfigMap
 metadata:
   creationTimestamp: null
